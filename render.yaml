@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rumtezcs-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8634969905:AAH_fvw8Q_pnHIIH2srBmkC_ixWjmWLgQcU
+      - key: GROUP_CHAT_ID
+        value: -1002372210055
+      - key: ADMIN_IDS
+        value: 6378314368,6970879117
+      - key: MONGO_URI
+        value: mongodb+srv://Today_Idk:TpdauT434odayTodayToday23@cluster0.rlgkop5.mongodb.net/rumtezcs_bot?retryWrites=true&w=majority&appName=Cluster0
+      - key: MONGO_DB_NAME
+        value: rumtezcs_bot
